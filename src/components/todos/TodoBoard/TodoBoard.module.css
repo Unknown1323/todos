@@ -1,0 +1,38 @@
+.boardWrapper {
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.boardContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.boardTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.columnsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.error,
+.notFound {
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.error {
+  color: #ef4444;
+}
+
+.notFound {
+  color: #475569;
+}
