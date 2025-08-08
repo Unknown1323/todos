@@ -3,7 +3,7 @@ import type { Todo } from '../components/todos/types';
 
 export const todosApi = createApi({
   reducerPath: 'todosApi',
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_URL || 'https://6895b748039a1a2b28900e4f.mockapi.io/todo/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_URL }),
   tagTypes: ['Todos'],
   endpoints: (builder) => ({
     getTodos: builder.query<Todo[], void>({
